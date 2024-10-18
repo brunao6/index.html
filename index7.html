@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Esportes Olímpicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e3450;
+            margin: 0;
+            padding: 20px;
+
+        }
+        .quiz-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            margin: 0 0 10px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+       /* sidebar */
+        {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+
+        .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+        color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+        .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        }
+
+        .openbtn:hover {
+        background-color: #444;
+        }
+
+        #main {
+        transition: margin-left .5s;
+        padding: 16px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+        }
+
+</style>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Menu</a>
+        <a href="jogos.html">jogos</a>
+        <a href="Dino.html">Corrida com Obstáculos</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+   
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="quiz-container">
+        <h1>Quiz sobre Esportes Olímpicos</h1>
+        <form id="quizForm">
+            <div class="question">
+                <h3>1. Em que ano foram realizados os primeiros Jogos Olímpicos modernos?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="1896"> 1896</label>
+                    <label><input type="radio" name="q1" value="1900"> 1900</label>
+                    <label><input type="radio" name="q1" value="1912"> 1912</label>
+                    <label><input type="radio" name="q1" value="1920"> 1920</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>2. Qual é o esporte olímpico mais antigo?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="Corrida"> Corrida</label>
+                    <label><input type="radio" name="q2" value="Luta"> Luta</label>
+                    <label><input type="radio" name="q2" value="Salto em distância"> Salto em distância</label>
+                    <label><input type="radio" name="q2" value="Arremesso de disco"> Arremesso de disco</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>3. Qual cidade sediou os Jogos Olímpicos de 2016?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="Londres"> Londres</label>
+                    <label><input type="radio" name="q3" value="Pequim"> Pequim</label>
+                    <label><input type="radio" name="q3" value="Rio de Janeiro"> Rio de Janeiro</label>
+                    <label><input type="radio" name="q3" value="Tóquio"> Tóquio</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>4. Quantos anéis existem no símbolo olímpico?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="3"> 3</label>
+                    <label><input type="radio" name="q4" value="4"> 4</label>
+                    <label><input type="radio" name="q4" value="5"> 5</label>
+                    <label><input type="radio" name="q4" value="6"> 6</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>5. Qual é o lema olímpico?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="Mais rápido, mais alto, mais forte"> Mais rápido, mais alto, mais forte</label>
+                    <label><input type="radio" name="q5" value="Participar é o que importa"> Participar é o que importa</label>
+                    <label><input type="radio" name="q5" value="Unidos pelo esporte"> Unidos pelo esporte</label>
+                    <label><input type="radio" name="q5" value="Esporte para todos"> Esporte para todos</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>6. Qual país ganhou mais medalhas de ouro nos Jogos Olímpicos de Verão de 2020?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="Estados Unidos"> Estados Unidos</label>
+                    <label><input type="radio" name="q6" value="China"> China</label>
+                    <label><input type="radio" name="q6" value="Japão"> Japão</label>
+                    <label><input type="radio" name="q6" value="Grã-Bretanha"> Grã-Bretanha</label>
+                </div>
+            </div>
+            <button type="button" class="submit-btn" onclick="checkAnswers()">Enviar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            const quizForm = document.getElementById('quizForm');
+            const result = document.getElementById('result');
+            let score = 0;
+
+            if (quizForm.q1.value === '1896') score++;
+            if (quizForm.q2.value === 'Corrida') score++;
+            if (quizForm.q3.value === 'Rio de Janeiro') score++;
+            if (quizForm.q4.value === '5') score++;
+            if (quizForm.q5.value === 'Mais rápido, mais alto, mais forte') score++;
+            if (quizForm.q6.value === 'Estados Unidos') score++;
+
+            result.innerHTML = `<h2>Você acertou ${score} de 6 perguntas!</h2>`;
+        }
+    </script>
+</body>
+</html>
